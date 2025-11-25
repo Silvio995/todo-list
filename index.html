@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La mia To-Do List</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <section class="card">
+      <h1 class="title">La mia lista</h1>
+      <p class="subtitle">Aggiungi e rimuovi le tue attività quotidiane.</p>
+
+      <div class="input-row">
+        <input
+          id="todo-input"
+          type="text"
+          placeholder="Scrivi un elemento..."
+          autocomplete="off"
+        />
+        <button id="add-btn">Aggiungi</button>
+      </div>
+
+      <ul id="todo-list" class="todo-list" aria-live="polite"></ul>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
